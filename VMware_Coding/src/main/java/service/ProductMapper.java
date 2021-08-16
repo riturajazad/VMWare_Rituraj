@@ -9,9 +9,6 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public interface ProductMapper {
 
-    @Mappings({
-            @Mapping(target = "serviceAddress", ignore = true)
-    })
     Product entityToApi(ProductEntity entity);
 
     @Mappings({
