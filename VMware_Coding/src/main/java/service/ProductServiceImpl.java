@@ -37,7 +37,7 @@ public class ProductServiceImpl implements ProductService {
         ProductEntity entity = repository.findBytaskId(taskId)
                 .orElseThrow(() -> new NotFoundException("No product found for taskId: {}" + taskId));
         Product response = mapper.entityToApi(entity);
-        LOG.info("getProduct: found taskId: {}", response.getProductId());
+        LOG.info("gettaskby: found taskId: {}", response.gettaskId());
         return response;
     }
 
