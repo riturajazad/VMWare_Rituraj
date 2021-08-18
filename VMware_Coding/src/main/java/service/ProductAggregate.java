@@ -11,18 +11,12 @@ import java.util.List;
 public class ProductAggregate {
     private final int taskId;
     private final String name;
-    private final int weight;
-    private final List<RecommendationSummary> recommendations;
-    private final List<ReviewSummary> reviews;
-    private final ServiceAddress serviceAddresses;
+    
 
     
     public ProductAggregate() {
         taskId = 0;
         name = null;
-        weight = 0;
-        recommendations = null;
-        reviews = null;
-        serviceAddresses = null;
+      
     }
 }
