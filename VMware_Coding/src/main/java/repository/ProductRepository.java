@@ -5,6 +5,6 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import java.util.Optional;
 
 public interface ProductRepository extends PagingAndSortingRepository<ProductEntity, String> {
-    Optional<taskId> findByProductId(int taskId);
+    Optional<taskId> findBytaskId(int taskId);
 }
 
